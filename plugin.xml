@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.phonegap.plugins.versionname" version="0.0.1">
+    <name>NativeStorage</name>
+    <description>Cordova Native Storage</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,phonegap,storage,nativestorage</keywords>
+    <js-module src="www/nativestorage.js" name="nativestorage">
+        <clobbers target="nativestorage" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="NativeStorage">
+                <param name="ios-package" value="NativeStorage"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/NativeStorage.h" />
+        <source-file src="src/ios/NativeStorage.m" />
+    </platform>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NativeStorage">
+                <param name="android-package" value="com.phonegap.plugins.nativestorage.NativeStorage"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/NativeStorage.java" target-dir="src/com/phonegap/plugins/nativestorage" />
+    </platform>
+</plugin>
