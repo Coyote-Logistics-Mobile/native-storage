@@ -3,7 +3,7 @@
 
 @implementation NativeStorage
 
-- (void) GetValue:(CDVInvokedUrlCommand*)command
+- (void) getValue:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
     NSString *value = @"";

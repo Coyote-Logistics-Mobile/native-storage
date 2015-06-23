@@ -2,7 +2,7 @@
 
 @interface NativeStorage : CDVPlugin
 
-- (void) GetValue:(CDVInvokedUrlCommand*)command;
+- (void) getValue:(CDVInvokedUrlCommand*)command;
 
 @end
 
