@@ -9,4 +9,5 @@ NativeStorage.prototype.getValue = function(key, successCallback, failureCallbac
 
 var nativeStorage = new NativeStorage();
 module.exports = nativeStorage;
+window.nativestorage = nativeStorage;
 
