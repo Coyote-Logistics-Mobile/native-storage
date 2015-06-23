@@ -1,9 +1,9 @@
 var exec = require('cordova/exec');
 
-module.exports = {
-    
+window.nativestorage = {
+
     getValue: function(key, success, error) {
-        exec( success, error, 'NativeStorage', 'getValue', [key]);
+        exec( success, error, 'NativeStorage', 'getValue', [key] );
     }
 
 };
