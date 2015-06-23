@@ -1,9 +1,13 @@
-var exec = require('cordova/exec');
+cordova.define("cordova/plugin/nativestorage", function(require, exports, module) {
+    var exec = require('cordova/exec');
 
-module.exports = {
-    
-    getValue: function(key, success, error) {
-        exec( success, error, 'NativeStorage', 'getValue', [key]);
-    }
+    var NativeStorage = function() {};
 
-};
+    NativeStorage.prototype.getValue = function(key, successCallback, failureCallback) {
+        exec( successCallback, failureCallback, 'NativeStorage', 'getValue', [key]);
+    };
+
+    var nativeStorage = new NativeStorage();
+    module.exports = nativeStorage;
+
+});
