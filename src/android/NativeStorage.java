@@ -14,6 +14,8 @@ public class NativeStorage extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         boolean result = false;
 
+        system.out.println("IN NATIVE IMPLEMENTATION!!!!!!!!!!!!!!!!!!!!!!!");
+ 
         if(action.equals(ACTION_GET_VALUE)) {
         	String value = "";
         	if( args.getString(0).equalsIgnoreCase("basic_auth_password") ) {
