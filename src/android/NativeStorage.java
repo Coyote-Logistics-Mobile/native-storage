@@ -1,4 +1,4 @@
-package com.phonegap.plugins;
+package com.phonegap.plugins.nativestorage;
 
 import org.json.JSONArray;
 import org.json.JSONException;
