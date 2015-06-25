@@ -8,7 +8,7 @@ import org.apache.cordova.CordovaPlugin;
 
 public class NativeStorage extends CordovaPlugin {
 
-    public final String ACTION_GET_VALUE = "GetValue";
+    public final String ACTION_GET_VALUE = "getValue";
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
