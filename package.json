@@ -1,0 +1,35 @@
+{
+  "name": "com.phonegap.plugins.nativestorage",
+  "version": "2.2.5",
+  "description": "native storage",
+  "cordova": {
+    "id": "com.phonegap.plugins.nativestorage",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maleriepace/native-storage.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "phonegap"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/maleriepace/native-storage/issues"
+  },
+  "homepage": "https://github.com/maleriepace/native-storage#readme"
+}
