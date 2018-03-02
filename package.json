@@ -1,13 +1,10 @@
 {
   "name": "com.phonegap.plugins.nativestorage",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "native storage",
   "cordova": {
     "id": "com.phonegap.plugins.nativestorage",
-    "platforms": [
-      "android",
-      "ios"
-    ]
+    "platforms": ["android", "ios"]
   },
   "repository": {
     "type": "git",
